@@ -1,6 +1,15 @@
 import reviews from "./reviews.json";
 
 import instagramImage from "./assets/img/instagram.svg";
+import facebookImage from "./assets/img/facebook.svg";
+import heroImage from "./assets/img/hero.svg";
+import separatorImage from "./assets/img/separator.svg";
+import bookImage from "./assets/img/book.svg";
+import apostropheImage from "./assets/img/apostrophe.svg";
+import authorImage from "./assets/img/author.png";
+import secondaryBookImage from "./assets/img/book2.png";
+import copyrightImage from "./assets/img/copyright.svg";
+import logoImage from "./assets/img/logo.svg";
 
 export default function App() {
   return (
@@ -47,7 +56,7 @@ export default function App() {
           className="hidden md:block"
         >
           <img
-            src="src/assets/img/facebook.svg"
+            src={facebookImage}
             alt="Facebook Icon"
             className="transition-transform duration-200 hover:scale-125"
           />
@@ -59,7 +68,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-10">
             <div className="flex justify-end">
               <img
-                src="src/assets/img/hero.svg"
+                src={heroImage}
                 alt="Nasumično po volji – knjiga"
                 className="w-150 select-none"
                 loading="lazy"
@@ -76,8 +85,8 @@ export default function App() {
               </p>
 
               <img
-                src="src/assets/img/separator.svg"
-                alt="Entropy Logo"
+                src={separatorImage}
+                alt="Separator"
                 loading="lazy"
                 className="w-100 h-10.5"
               />
@@ -142,7 +151,7 @@ export default function App() {
 
             <div className="flex justify-center">
               <img
-                src="src/assets/img/book.svg"
+                src={bookImage}
                 alt="Nasumično po volji – knjiga"
                 className="w-90 select-none"
                 loading="lazy"
@@ -155,7 +164,7 @@ export default function App() {
       <section className="w-full flex justify-center bg-[#45AD34]">
         <div className="container flex flex-col items-center py-20 md:py-43">
           <img
-            src="src/assets/img/apostrophe.svg"
+            src={apostropheImage}
             alt="apostrophe sign"
             loading="lazy"
             className="w-15.5 mb-10 md:mb-20"
@@ -208,7 +217,7 @@ export default function App() {
           </p>
         </div>
         <picture>
-          <img src="src/assets/img/author.png" alt="author" loading="lazy" />
+          <img src={authorImage} alt="author" loading="lazy" />
         </picture>
       </section>
 
@@ -238,7 +247,7 @@ export default function App() {
           <div className="flex flex-col items-center gap-10">
             <div className="flex justify-end">
               <img
-                src="src/assets/img/book2.png"
+                src={secondaryBookImage}
                 alt="Nasumično po volji – knjiga"
                 className="w-125 select-none"
                 loading="lazy"
@@ -251,7 +260,7 @@ export default function App() {
               </p>
 
               <img
-                src="src/assets/img/separator.svg"
+                src={separatorImage}
                 alt="Entropy Logo"
                 loading="lazy"
                 className="w-75 h-10.5"
@@ -271,7 +280,7 @@ export default function App() {
         <div className="container flex flex-col items-center py-20 px-4 pb-10">
           <div className="flex items-center uppercase gap-x-3 w-fit mx-auto">
             <img
-              src="src/assets/img/logo.svg"
+              src={logoImage}
               alt="Entropy Logo"
               loading="lazy"
               className="w-10.5 h-10.5 md:w-13.5 md:h-13.5"
@@ -297,7 +306,7 @@ export default function App() {
           <div className="flex items-center gap-6 md:gap-2.5">
             <a href="https://www.instagram.com/entropija_izdavastvo/">
               <img
-                src="src/assets/img/instagram.svg"
+                src={instagramImage}
                 alt="Instagram Icon"
                 loading="lazy"
                 className="w-6 transition-transform duration-200 hover:scale-125"
@@ -306,7 +315,7 @@ export default function App() {
 
             <a href="https://www.facebook.com/profile.php?id=61550616857700">
               <img
-                src="src/assets/img/facebook.svg"
+                src={facebookImage}
                 alt="Facebook Icon"
                 loading="lazy"
                 className="w-6 transition-transform duration-200 hover:scale-125"
@@ -317,11 +326,7 @@ export default function App() {
       </footer>
 
       <section className="flex items-center justify-center gap-2 h-16.25 border-t border-[#222222] bg-[#45AD34]">
-        <img
-          src="src/assets/img/copyright.svg"
-          alt="copyright"
-          loading="lazy"
-        />
+        <img src={copyrightImage} alt="copyright" loading="lazy" />
         <p>2025 - 2026 ENTROPIJA</p>
       </section>
     </div>
