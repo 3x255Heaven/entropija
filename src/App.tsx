@@ -64,28 +64,29 @@ export default function App() {
       </header>
 
       <section className="w-full bg-[#45AD34] border-b relative">
-        <p className="text-[24px] leading-8 mt-5.5 -mb-3.5 text-[#222222] uppercase text-center absolute rotate-90 top-55 -left-12.5">
+        <p className="lg:text-[24px] text-[14px] leading-4.5 lg:leading-8 lg:mt-5.5 pt-10 -mb-3.5 text-[#222222] uppercase text-center lg:absolute lg:rotate-90 top-55 -left-12.5">
           <span className="font-bold">2 miliona </span>odštampanih <br />{" "}
           primeraka na engleskom
         </p>
 
-        <div className="mx-auto max-w-700 px-6 py-24">
+        <div className="mx-auto max-w-700 px-6 lg:py-24 py-10">
           <div className="flex flex-col items-center gap-10">
             <div className="flex justify-end">
               <img
                 src={heroImage}
                 alt="Nasumično po volji – knjiga"
-                className="w-150 select-none"
+                className="w-150 select-none opacity-0 transition-opacity duration-500"
+                onLoad={(e) => e.currentTarget.classList.add("opacity-100")}
                 loading="lazy"
               />
             </div>
 
             <div className="max-w-150 flex flex-col justify-center items-center">
-              <p className="text-[40px] leading-12 text-[#222222] uppercase text-center font-bold">
+              <p className="lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 text-[#222222] uppercase text-center font-bold">
                 Najbolji investicioni vodič <br /> koji se može kupiti
               </p>
 
-              <p className="text-[24px] leading-8 mt-5.5 -mb-3.5 text-[#222222] uppercase text-center">
+              <p className="lg:text-[24px] lg:leading-8 text-[14px] leading-4.5 mt-5.5 -mb-3.5 text-[#222222] uppercase text-center">
                 po prvi put na srpskom jeziku
               </p>
 
@@ -93,7 +94,7 @@ export default function App() {
                 src={separatorImage}
                 alt="Separator"
                 loading="lazy"
-                className="w-100 h-10.5"
+                className="lg:w-100 w-50 h-10.5"
               />
             </div>
           </div>
@@ -102,13 +103,13 @@ export default function App() {
 
       <section className="bg-[#e6b85c] px-4 py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 text-[40px] leading-12 font-bold uppercase tracking-wide text-black">
+          <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 lg:text-center text-left font-bold uppercase tracking-wide text-black">
             UREDNIŠTVO ENTROPIJE JE PONOSNO ŠTO <br />
             DONOSI KULTNU INVESTICIONU KNJIGU <br />
             ČITAOCIMA SA OVIH PROSTORA
           </h2>
 
-          <p className="mx-auto mb-6 max-w-3xl text-[18px] leading-6 text-black">
+          <p className="mx-auto mb-6 max-w-3xl lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-black lg:text-center text-left">
             Ovaj vodič za investiranje, oslobođen smicalica, potrebniji je nego
             ikada, naročito danas, u vreme rasprostranjenih dezinformacija o
             tome kako da uvećate svoj novac. Bez obzira na to da li razmatrate
@@ -118,7 +119,7 @@ export default function App() {
             može kupiti.
           </p>
 
-          <p className="text-black text-[18px] leading-6">
+          <p className="text-black lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
             <span className="font-semibold">Endru Tobajas</span> (Andrew Tobias)
           </p>
         </div>
@@ -126,25 +127,25 @@ export default function App() {
 
       <section className="w-full bg-white">
         <div className="mx-auto max-w-300 px-6 py-24">
-          <div className="grid grid-cols-2 items-center gap-8">
-            <div className="max-w-115">
-              <h2 className="mb-6 text-[40px] leading-12 font-bold uppercase tracking-[0.04em] text-[#222]">
+          <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-8">
+            <div className="max-w-115 lg:order-1 order-2">
+              <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-[0.04em] text-[#222]">
                 Novo u ponudi
               </h2>
 
-              <p className="mb-6 text-[18px] leading-6 text-[#555]">
+              <p className="mb-6 lg:text-[18px] lg:leading-6 text-[18px] leading-5.5 text-[#222]">
                 Ovo je jedna od „svega nekoliko sjajnih knjiga o investiranju“
                 koje su ikada napisane, sa preko dva miliona objavljenih
                 primeraka i prevodima na 25 jezika sveta.
               </p>
 
-              <p className="mb-4 text-[18px] leading-6 text-[#222]">
+              <p className="mb-4 lg:text-[18px] lg:leading-6 text-[18px] leading-5.5 text-[#222]">
                 <span className="font-semibold">Endru Tobajas</span> (Andrew
                 Tobias)
               </p>
 
               <div className="flex items-center gap-6 border-t border-[#E6E6E6] pt-6">
-                <span className="text-[18px] leading-6 font-light">
+                <span className="lg:text-[18px] lg:leading-6 text-[18px] leading-5.5 font-light">
                   Kupovina preko Ananasa
                 </span>
 
@@ -154,7 +155,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center lg:order-2 order-1">
               <img
                 src={bookImage}
                 alt="Nasumično po volji – knjiga"
@@ -167,7 +168,7 @@ export default function App() {
       </section>
 
       <section className="w-full flex justify-center bg-[#45AD34]">
-        <div className="container flex flex-col items-center py-20 md:py-43">
+        <div className="container flex flex-col items-center py-20 md:py-43 px-5">
           <img
             src={apostropheImage}
             alt="apostrophe sign"
@@ -199,17 +200,17 @@ export default function App() {
 
       <section className="author-section">
         <div className="author-text">
-          <h2 className="text-[40px] leading-12 font-bold uppercase tracking-wide text-black">
+          <h2 className="lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-wide text-black">
             AUTOR
           </h2>
-          <p className="text-[18px] leading-6">
+          <p className="lg:text-[18px] lg:leading-6 text-[18px] leading-5.5">
             <span className="font-bold">Barton G. Malkijel</span> je profesor
             emeritus ekonomije na Unverzitetu Prinston. Bivši je član Ekonomskog
             saveta kancelarije predsednika SAD i dekan škole menadžmenta
             Univerziteta Jejl. Živi u Nju Džerziju.
           </p>
 
-          <p className="text-[18px] leading-6">
+          <p className="lg:text-[18px] lg:leading-6 text-[18px] leading-5.5">
             Oslanjajući se na svoje iskustvo ekonomiste, finansijskog savetnika
             i uspešnog investitora, Malkijel pokazuje da pojedinac koji tokom
             vremena štedi u kontinuitetu i investira u diverzifikovanu grupu
@@ -228,20 +229,20 @@ export default function App() {
 
       <section className="bg-[#e6b85c] px-4 py-20 border-b">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="mb-6 text-[40px] leading-12 font-bold uppercase tracking-wide text-black">
+          <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-wide text-black lg:text-center text-left">
             UREDNIŠTVO ENTROPIJA SMATRA DA OVA KNJIGA <br />
             TREBA DA SE NAĐE U BIBLIOTECI SVAKOG <br />
             INVESTITORSKOG ASPIRANTA ŽELJNOG DA <br />
             DIVERSIFIKUJE SVOJA ULAGANJA
           </h2>
 
-          <p className="mx-auto mb-6 max-w-3xl text-[18px] leading-6 text-black">
+          <p className="mx-auto mb-6 max-w-3xl lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-black lg:text-center text-left">
             Svaki investitor će, bez obzira na starosnu dob, prethodno iskustvo
             i toleranciju prema riziku, ovde naći uputstvo kako da, korak po
             korak, zaštiti i uveća svoj novac.
           </p>
 
-          <p className="text-black text-[18px] leading-6">
+          <p className="text-black lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
             <span className="font-semibold">Endru Tobajas</span> (Andrew Tobias)
           </p>
         </div>
@@ -260,7 +261,7 @@ export default function App() {
             </div>
 
             <div className="max-w-115 flex flex-col justify-center items-center">
-              <p className="text-[24px] leading-8 text-[#222222] uppercase text-center">
+              <p className="lg:text-[24px] lg:leading-8 text-[14px] leading-4.5 text-[#222222] uppercase text-center">
                 Najbolji investicioni vodič <br /> koji se može kupiti
               </p>
 
