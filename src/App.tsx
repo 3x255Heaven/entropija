@@ -1,5 +1,7 @@
 import reviews from "./reviews.json";
 
+import instagramImage from "./assets/img/instagram.svg";
+
 export default function App() {
   return (
     <div className="w-full font-sans text-black">
@@ -34,7 +36,7 @@ export default function App() {
           className="hidden md:block md:ml-auto md:mr-3.75"
         >
           <img
-            src="src/assets/img/instagram.svg"
+            src={instagramImage}
             alt="Instagram Icon"
             className="transition-transform duration-200 hover:scale-125"
           />
