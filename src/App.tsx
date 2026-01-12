@@ -63,7 +63,12 @@ export default function App() {
         </a>
       </header>
 
-      <section className="w-full bg-[#45AD34] border-b">
+      <section className="w-full bg-[#45AD34] border-b relative">
+        <p className="text-[24px] leading-8 mt-5.5 -mb-3.5 text-[#222222] uppercase text-center absolute rotate-90 top-55 -left-12.5">
+          <span className="font-bold">2 miliona </span>odštampanih <br />{" "}
+          primeraka na engleskom
+        </p>
+
         <div className="mx-auto max-w-700 px-6 py-24">
           <div className="flex flex-col items-center gap-10">
             <div className="flex justify-end">
