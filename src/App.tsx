@@ -13,7 +13,7 @@ import logoImage from "./assets/img/logo.svg";
 
 export default function App() {
   return (
-    <div className="w-full font-sans text-black">
+    <div className="w-full text-[#222]">
       <header className="flex items-center justify-center h-17.5 md:h-29.5 md:justify-start w-full px-14 border-b bg-[#45AD34]">
         <div className="flex items-center uppercase gap-x-3">
           <svg
@@ -63,14 +63,14 @@ export default function App() {
         </a>
       </header>
 
-      <section className="w-full bg-[#45AD34] border-b relative">
-        <p className="lg:text-[24px] text-[14px] leading-4.5 lg:leading-8 lg:mt-5.5 pt-10 -mb-3.5 text-[#222222] uppercase text-center lg:absolute lg:rotate-90 top-55 -left-12.5">
+      <section className="w-full bg-[#45AD34] border-b border-[#222] relative">
+        <p className="lg:text-[24px] text-[14px] leading-4.5 lg:leading-8 lg:mt-5.5 pt-20 -mb-3.5 text-[#222222] uppercase text-center lg:absolute lg:rotate-90 top-79 -left-12.5">
           <span className="font-bold">2 miliona </span>odštampanih <br />{" "}
           primeraka na engleskom
         </p>
 
-        <div className="mx-auto max-w-700 px-6 lg:py-24 py-10">
-          <div className="flex flex-col items-center gap-10">
+        <div className="mx-auto max-w-700 px-6 lg:py-50.5 pt-10 pb-35.5">
+          <div className="flex flex-col items-center gap-18">
             <div className="flex justify-end">
               <img
                 src={heroImage}
@@ -101,15 +101,15 @@ export default function App() {
         </div>
       </section>
 
-      <section className="bg-[#e6b85c] px-4 py-20">
+      <section className="bg-[#e6b85c] lg:px-4 px-8 py-42 border-b border-[#222]">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 lg:text-center text-left font-bold uppercase tracking-wide text-black">
-            UREDNIŠTVO ENTROPIJE JE PONOSNO ŠTO <br />
-            DONOSI KULTNU INVESTICIONU KNJIGU <br />
-            ČITAOCIMA SA OVIH PROSTORA
+          <h2 className="lg:mb-12 mb-8 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 lg:text-center text-left font-bold uppercase tracking-wide text-[#222222]">
+            UREDNIŠTVO ENTROPIJE JE PONOSNO <br />
+            ŠTO DONOSI KULTNU INVESTICIONU <br />
+            KNJIGU ČITAOCIMA SA OVIH PROSTORA
           </h2>
 
-          <p className="mx-auto mb-6 max-w-3xl lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-black lg:text-center text-left">
+          <p className="mx-auto lg:mb-4 mb-3 max-w-3xl lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-[#222222] lg:text-center text-left">
             Ovaj vodič za investiranje, oslobođen smicalica, potrebniji je nego
             ikada, naročito danas, u vreme rasprostranjenih dezinformacija o
             tome kako da uvećate svoj novac. Bez obzira na to da li razmatrate
@@ -119,13 +119,13 @@ export default function App() {
             može kupiti.
           </p>
 
-          <p className="text-black lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
+          <p className="text-[#222222] lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
             <span className="font-semibold">Endru Tobajas</span> (Andrew Tobias)
           </p>
         </div>
       </section>
 
-      <section className="w-full bg-white">
+      <section className="w-full bg-white border-b border-[#222]">
         <div className="mx-auto max-w-300 px-6 py-24">
           <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-8">
             <div className="max-w-115 lg:order-1 order-2">
@@ -133,29 +133,29 @@ export default function App() {
                 Novo u ponudi
               </h2>
 
-              <p className="mb-6 lg:text-[18px] lg:leading-6 text-[18px] leading-5.5 text-[#222]">
+              <p className="mb-3 lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-[#222] tracking-[0]">
                 Ovo je jedna od „svega nekoliko sjajnih knjiga o investiranju“
                 koje su ikada napisane, sa preko dva miliona objavljenih
                 primeraka i prevodima na 25 jezika sveta.
               </p>
 
-              <p className="mb-4 lg:text-[18px] lg:leading-6 text-[18px] leading-5.5 text-[#222]">
-                <span className="font-semibold">Endru Tobajas</span> (Andrew
-                Tobias)
+              <p className="mb-4.5 lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-[#222]">
+                <span className="font-semibold">Endru Tobajas</span>{" "}
+                <span className="italic">(Andrew Tobias)</span>
               </p>
 
-              <div className="flex items-center gap-6 border-t border-[#E6E6E6] pt-6">
-                <span className="lg:text-[18px] lg:leading-6 text-[18px] leading-5.5 font-light">
+              <div className="flex items-center gap-6 border-t border-[#E6E6E6] pt-4.5">
+                <span className="lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 font-light">
                   Kupovina preko Ananasa
                 </span>
 
-                <button className="rounded-full cursor-pointer bg-[#F15A3B] px-6 py-3 text-[13px] font-semibold uppercase text-white transition hover:opacity-90">
+                <button className="rounded-full cursor-pointer lg:w-auto w-38.5 bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90">
                   Naruči odmah
                 </button>
               </div>
             </div>
 
-            <div className="flex justify-center lg:order-2 order-1">
+            <div className="flex lg:justify-center justify-start lg:order-2 order-1">
               <img
                 src={bookImage}
                 alt="Nasumično po volji – knjiga"
@@ -167,7 +167,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="w-full flex justify-center bg-[#45AD34]">
+      <section className="w-full flex justify-center bg-[#45AD34] border-b border-[#222]">
         <div className="container flex flex-col items-center py-20 md:py-43 px-5">
           <img
             src={apostropheImage}
@@ -179,16 +179,16 @@ export default function App() {
           <div className="max-w-144.5 flex flex-col gap-10 text-center md:gap-20">
             {reviews.map((review, index) => (
               <div key={index}>
-                <p className="mb-5">{review.text}</p>
+                <p className="mb-4 lg:text-[18px] text-[14px]">{review.text}</p>
 
-                <p className="flex justify-center items-center uppercase font-extrabold">
-                  <span className="mr-2 font-normal text-[16px] tracking-[-2.5px]">
+                <p className="flex justify-center items-center font-extrabold">
+                  <span className="mr-2 font-normal lg:text-[18px] text-[14px] tracking-[-2.5px]">
                     ------
                   </span>
 
                   {review.authorSrb}
 
-                  <span className="font-normal normal-case">
+                  <span className="font-normal normal-case lg:text-[18px] text-[14px]">
                     &nbsp;<i>{review.authorOg}</i>
                   </span>
                 </p>
@@ -198,9 +198,9 @@ export default function App() {
         </div>
       </section>
 
-      <section className="author-section">
+      <section className="author-section border-b border-[#222]">
         <div className="author-text">
-          <h2 className="lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-wide text-black">
+          <h2 className="lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-wide">
             AUTOR
           </h2>
           <p className="lg:text-[18px] lg:leading-6 text-[18px] leading-5.5">
@@ -227,28 +227,29 @@ export default function App() {
         </picture>
       </section>
 
-      <section className="bg-[#e6b85c] px-4 py-20 border-b">
+      <section className="bg-[#e6b85c] px-4 py-42 border-b border-[#222]">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-wide text-black lg:text-center text-left">
+          <h2 className="lg:mb-12 mb-8 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-wide lg:text-center text-left">
             UREDNIŠTVO ENTROPIJA SMATRA DA OVA KNJIGA <br />
             TREBA DA SE NAĐE U BIBLIOTECI SVAKOG <br />
             INVESTITORSKOG ASPIRANTA ŽELJNOG DA <br />
             DIVERSIFIKUJE SVOJA ULAGANJA
           </h2>
 
-          <p className="mx-auto mb-6 max-w-3xl lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 text-black lg:text-center text-left">
+          <p className="mx-auto lg:mb-4 mb-3 max-w-3xl lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
             Svaki investitor će, bez obzira na starosnu dob, prethodno iskustvo
             i toleranciju prema riziku, ovde naći uputstvo kako da, korak po
             korak, zaštiti i uveća svoj novac.
           </p>
 
-          <p className="text-black lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
-            <span className="font-semibold">Endru Tobajas</span> (Andrew Tobias)
+          <p className="lg:text-[18px] lg:leading-6 text-[14px] leading-4.5 lg:text-center text-left">
+            <span className="font-semibold">Endru Tobajas</span>{" "}
+            <span className="italic">(Andrew Tobias)</span>
           </p>
         </div>
       </section>
 
-      <section className="w-full bg-white">
+      <section className="w-full bg-white border-b border-[#222]">
         <div className="mx-auto max-w-300 px-6 py-24">
           <div className="flex flex-col items-center gap-10">
             <div className="flex justify-end">
@@ -261,7 +262,7 @@ export default function App() {
             </div>
 
             <div className="max-w-115 flex flex-col justify-center items-center">
-              <p className="lg:text-[24px] lg:leading-8 text-[14px] leading-4.5 text-[#222222] uppercase text-center">
+              <p className="lg:text-[24px] lg:leading-8 text-[14px] leading-4.5 text-[#222222] uppercase text-center mb-3">
                 Najbolji investicioni vodič <br /> koji se može kupiti
               </p>
 
@@ -269,11 +270,11 @@ export default function App() {
                 src={separatorImage}
                 alt="Entropy Logo"
                 loading="lazy"
-                className="w-75 h-10.5"
+                className="lg:w-75 w-50"
               />
 
-              <div className="flex items-center gap-6 pt-2">
-                <button className="rounded-full cursor-pointer bg-[#F15A3B] px-8 py-5 text-[13px] font-semibold uppercase text-white transition hover:opacity-90">
+              <div className="flex items-center gap-6 mt-6">
+                <button className="rounded-full cursor-pointer bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-4 text-[18px] font-semibold uppercase text-white transition hover:opacity-90">
                   Naruči odmah
                 </button>
               </div>
@@ -315,7 +316,7 @@ export default function App() {
                 src={instagramImage}
                 alt="Instagram Icon"
                 loading="lazy"
-                className="w-6 transition-transform duration-200 hover:scale-125"
+                className="lg:w-9.5 w-6 transition-transform duration-200 hover:scale-125"
               />
             </a>
 
@@ -324,7 +325,7 @@ export default function App() {
                 src={facebookImage}
                 alt="Facebook Icon"
                 loading="lazy"
-                className="w-6 transition-transform duration-200 hover:scale-125"
+                className="lg:w-9.5 w-6 transition-transform duration-200 hover:scale-125"
               />
             </a>
           </div>
