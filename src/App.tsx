@@ -4,7 +4,7 @@ import instagramImage from "./assets/img/instagram.svg";
 import facebookImage from "./assets/img/facebook.svg";
 import heroImage from "./assets/img/hero.svg";
 import separatorImage from "./assets/img/separator.svg";
-import bookImage from "./assets/img/book.svg";
+import bookImage from "./assets/img/book.png";
 import apostropheImage from "./assets/img/apostrophe.svg";
 import authorImage from "./assets/img/author.png";
 import secondaryBookImage from "./assets/img/book2.png";
