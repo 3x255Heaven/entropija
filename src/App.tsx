@@ -72,7 +72,7 @@ export default function App() {
 
         <div className="mx-auto max-w-700 px-6 lg:py-50.5 pt-10 pb-35.5">
           <div className="flex flex-col items-center gap-18">
-            <div className="flex justify-end">
+            <div className="flex justify-end lg:w-150 lg:h-102.5 w-93.5 h-46.5">
               <HeroImage />
             </div>
 

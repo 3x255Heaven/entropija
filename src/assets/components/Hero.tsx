@@ -1,8 +1,8 @@
 export const HeroImage = () => {
   return (
     <svg
-      width="681"
-      height="410"
+      width="inherit"
+      height="inherit"
       viewBox="0 0 681 410"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
