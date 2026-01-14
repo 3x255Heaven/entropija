@@ -74,10 +74,9 @@ export default function App() {
             <div className="flex justify-end">
               <img
                 src={heroImage}
+                loading="eager"
                 alt="Nasumično po volji – knjiga"
-                className="w-150 select-none opacity-0 transition-opacity duration-500"
-                onLoad={(e) => e.currentTarget.classList.add("opacity-100")}
-                loading="lazy"
+                className="w-150 select-none"
               />
             </div>
 
@@ -126,7 +125,7 @@ export default function App() {
       </section>
 
       <section className="w-full bg-white border-b border-[#222]">
-        <div className="mx-auto max-w-300 px-6 py-24">
+        <div className="mx-auto max-w-300 lg:px-6 px-4 py-24">
           <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-8">
             <div className="max-w-115 lg:order-1 order-2">
               <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-[0.04em] text-[#222]">
@@ -168,7 +167,7 @@ export default function App() {
       </section>
 
       <section className="w-full flex justify-center bg-[#45AD34] border-b border-[#222]">
-        <div className="container flex flex-col items-center py-20 md:py-43 px-5">
+        <div className="container flex flex-col items-center py-20 md:py-43 px-4">
           <img
             src={apostropheImage}
             alt="apostrophe sign"
@@ -186,7 +185,9 @@ export default function App() {
                     ------
                   </span>
 
-                  {review.authorSrb}
+                  <span className="lg:text-[18px] text-[14px] font-semibold">
+                    {review.authorSrb}
+                  </span>
 
                   <span className="font-normal normal-case lg:text-[18px] text-[14px]">
                     &nbsp;<i>{review.authorOg}</i>
@@ -274,7 +275,7 @@ export default function App() {
               />
 
               <div className="flex items-center gap-6 mt-6">
-                <button className="rounded-full cursor-pointer bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-4 text-[18px] font-semibold uppercase text-white transition hover:opacity-90">
+                <button className="rounded-full cursor-pointer bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90">
                   Naruči odmah
                 </button>
               </div>
