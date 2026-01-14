@@ -121,7 +121,7 @@ export default function App() {
       </section>
 
       <section className="w-full bg-white border-b border-[#222]">
-        <div className="mx-auto max-w-300 lg:px-6 px-4 py-24">
+        <div className="mx-auto max-w-300 lg:px-6 px-4 lg:py-56 py-24">
           <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-8">
             <div className="max-w-115 lg:order-1 order-2">
               <h2 className="mb-6 lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 font-bold uppercase tracking-[0.04em] text-[#222]">
