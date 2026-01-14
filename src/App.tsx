@@ -1,8 +1,9 @@
 import reviews from "./reviews.json";
 
+import { HeroImage } from "./assets/components/Hero";
+
 import instagramImage from "./assets/img/instagram.svg";
 import facebookImage from "./assets/img/facebook.svg";
-import heroImage from "./assets/img/hero.svg";
 import separatorImage from "./assets/img/separator.svg";
 import bookImage from "./assets/img/book.png";
 import apostropheImage from "./assets/img/apostrophe.svg";
@@ -72,15 +73,10 @@ export default function App() {
         <div className="mx-auto max-w-700 px-6 lg:py-50.5 pt-10 pb-35.5">
           <div className="flex flex-col items-center gap-18">
             <div className="flex justify-end">
-              <img
-                src={heroImage}
-                loading="eager"
-                alt="Nasumično po volji – knjiga"
-                className="w-150 select-none"
-              />
+              <HeroImage />
             </div>
 
-            <div className="max-w-150 flex flex-col justify-center items-center">
+            <div className="max-w-full flex flex-col justify-center items-center">
               <p className="lg:text-[40px] lg:leading-12 text-[18px] leading-5.5 text-[#222222] uppercase text-center font-bold">
                 Najbolji investicioni vodič <br /> koji se može kupiti
               </p>
