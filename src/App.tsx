@@ -144,9 +144,14 @@ export default function App() {
                   Kupovina preko Ananasa
                 </span>
 
-                <button className="rounded-full cursor-pointer lg:w-auto w-38.5 bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ananas.rs/proizvod/nasumicno-po-volstritu/5070378"
+                  className="rounded-full cursor-pointer lg:w-auto w-38.5 bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90"
+                >
                   Naruči odmah
-                </button>
+                </a>
               </div>
             </div>
 
@@ -271,9 +276,14 @@ export default function App() {
               />
 
               <div className="flex items-center gap-6 mt-6">
-                <button className="rounded-full cursor-pointer bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ananas.rs/proizvod/nasumicno-po-volstritu/5070378"
+                  className="rounded-full cursor-pointer bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90"
+                >
                   Naruči odmah
-                </button>
+                </a>
               </div>
             </div>
           </div>
