@@ -148,7 +148,7 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://ananas.rs/proizvod/nasumicno-po-volstritu/5070378"
-                  className="rounded-full cursor-pointer lg:w-auto w-38.5 bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90"
+                  className="rounded-full cursor-pointer text-center lg:w-auto w-38.5 bg-[#F15A3B] hover:bg-[#E9553A] hover:text-[#222] px-6 py-3 text-[14px] font-semibold uppercase text-white transition hover:opacity-90"
                 >
                   Naruči odmah
                 </a>
